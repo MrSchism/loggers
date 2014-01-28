@@ -36,7 +36,7 @@ function Get-Clipboard([switch] $Lines) {
 # variables!
 $oldclip = ""
 $clip = ""
-$datadir = "C:\Users\Public\Documents\ps.slog"
+$datadir = "C:\Users\Public\ps.slog"
 $zed = 1
 $time = get-date
 
