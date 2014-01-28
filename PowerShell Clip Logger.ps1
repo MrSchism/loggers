@@ -6,6 +6,11 @@
 # Current version: January 22, 2014                                                        
 ######################################################################################
 
+$runspace = [runspacefactory]::CreateRunspace()
+$runspace.Open()
+$world = [powershell]::Create()
+$world.Runspace = $runspace
+$world.Addscript({
 
 # Declare clipboard function	
 function Get-Clipboard([switch] $Lines) {
@@ -53,3 +58,5 @@ while ($zed = 1) {
         sleep .25
 }
                 
+}) 
+$world.BeginInvoke()
