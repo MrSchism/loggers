@@ -40,8 +40,6 @@ $datadir = "C:\Users\Public\ps.slog"
 $zed = 1
 $time = get-date
 
-echo "" | $clip
-
 # Create file
 if (-not(test-path $datadir)) {
 	ni $datadir -type file
