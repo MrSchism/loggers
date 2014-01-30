@@ -47,7 +47,7 @@ if (-not(test-path $datadir)) {
 	ni $datadir -type file
     }
 
-while ($zed = 1) {
+while ($zed -eq 1) {
 	$clip = get-clipboard
 		if ($clip -ne "") { 
 			if ($clip -ne $oldclip) { 
